@@ -8,20 +8,21 @@ mvvmPastel can be downloaded as a standalone jar from [releases](https://github.
 can also be added with a package manager as a dependency via [JitPack](https://jitpack.io/).
 
 Adding the repository with Maven
-```
+```xml
 <repositories>
-  <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-  </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 </repositories>
 ```
 Adding mvvmPastel as a dependency with Maven
-```
+```xml
 <dependency>
-  <groupId>com.github.blossomishymae</groupId>
-  <artifactId>mvvmpastel</artifactId>
-  <version>master-SNAPSHOT</version>
+    <groupId>com.github.blossomishymae</groupId>
+    <artifactId>mvvmpastel</artifactId>
+    <version>v0.2.0-SNAPSHOT</version>
 </dependency>
 ```
+Available versions to select from can be found in the [release tags list](https://github.com/BlossomiShymae/mvvmpastel/tags).
 
