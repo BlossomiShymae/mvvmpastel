@@ -2,6 +2,12 @@ package io.github.blossomishymae.componentmodel;
 
 import io.github.blossomishymae.event.SimpleEventHandler;
 
+/**
+ * A base class for objects that are observable. Can be used for objects that need
+ * to prop property change notifications.
+ *
+ * @see io.github.blossomishymae.componentmodel.INotifyPropertyChanged
+ */
 public class ObservableObject implements INotifyPropertyChanged {
     public SimpleEventHandler<PropertyChangedEventArgs> propertyChanged;
 

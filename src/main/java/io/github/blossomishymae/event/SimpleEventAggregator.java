@@ -2,6 +2,12 @@ package io.github.blossomishymae.event;
 
 import java.util.HashMap;
 
+/**
+ * An event class that acts as a single source of simple events for many objects. The default
+ * return value for {@link #getEvent(Class)} is a typed {@link SimpleEventHandler}.
+ *
+ * @see io.github.blossomishymae.event.SimpleEventHandler
+ */
 public class SimpleEventAggregator {
     private final HashMap<Class<? extends SimpleEventHandler<?>>, SimpleEventHandler<?>> eventHashMap = new HashMap<>();
 

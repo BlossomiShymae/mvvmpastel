@@ -8,6 +8,15 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
+/**
+ * A strongly-typed binding class that ties a {@link ObservableObject} with its source
+ * {@link Supplier} to a control {@link Consumer}. Binding will be used on every {@link io.github.blossomishymae.componentmodel.INotifyPropertyChanged INotifyPropertyChanged}
+ * event.
+ *
+ * @param <T> the data type used for passing an object from {@link Supplier} to {@link Consumer}.
+ * @see ObservableObject
+ * @see io.github.blossomishymae.componentmodel.INotifyPropertyChanged INotifyPropertyChanged
+ */
 public class PastelBinding<T> implements IPastelBinding<T> {
     private final Supplier<T> dataSupplier;
     private final Consumer<T> controlConsumer;

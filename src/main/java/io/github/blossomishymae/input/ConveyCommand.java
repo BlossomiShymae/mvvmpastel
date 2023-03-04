@@ -5,6 +5,15 @@ import io.github.blossomishymae.event.SimpleEventHandler;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+/**
+ * A command class used to repeat its functionality to other objects by
+ * invoking delegates. The default return value for {@link #canExecute(Object)} is true.
+ * <p></p>
+ * The generic counterpart of {@link RelayCommand}.
+ *
+ * @param <T> the data type used for passing objects to delegates.
+ * @see io.github.blossomishymae.input.RelayCommand
+ */
 public class ConveyCommand<T> implements IConveyCommand<T> {
     private final Consumer<T> action;
     private final Predicate<T> canExecutePredicate;
