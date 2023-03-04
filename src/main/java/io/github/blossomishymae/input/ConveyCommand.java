@@ -22,6 +22,10 @@ public class ConveyCommand<T> implements IConveyCommand<T> {
         registerCanExecuteChanged(new SimpleEventHandler<>());
     }
 
+    public void execute(T parameter) {
+        action.accept(parameter);
+    }
+
     @Override
     public boolean canExecute(T parameter) {
         boolean canExecute = true;
