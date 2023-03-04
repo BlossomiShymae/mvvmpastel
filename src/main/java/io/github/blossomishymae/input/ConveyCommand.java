@@ -5,7 +5,7 @@ import io.github.blossomishymae.event.SimpleEventHandler;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-public class ConveyCommand<T> implements IRelayCommand<T> {
+public class ConveyCommand<T> implements IConveyCommand<T> {
     private final Consumer<T> action;
     private final Predicate<T> canExecutePredicate;
     public SimpleEventHandler<Boolean> executeChanged;

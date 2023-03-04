@@ -5,7 +5,7 @@ import io.github.blossomishymae.event.SimpleEventHandler;
 import java.util.concurrent.Callable;
 import java.util.function.BooleanSupplier;
 
-public class RelayCommand implements IRelayCommand<Object> {
+public class RelayCommand implements IRelayCommand {
     private final Callable<Void> action;
     private final BooleanSupplier canExecuteSupplier;
     public SimpleEventHandler<Boolean> executeChanged;
@@ -27,7 +27,7 @@ public class RelayCommand implements IRelayCommand<Object> {
     }
 
     @Override
-    public boolean canExecute(Object parameter) {
+    public boolean canExecute() {
         boolean canExecute = true;
         if (canExecuteSupplier != null) canExecute = canExecuteSupplier.getAsBoolean();
         return canExecute;
