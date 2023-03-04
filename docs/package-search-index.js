@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"io.github.blossomishymae.binding"},{"l":"io.github.blossomishymae.componentmodel"},{"l":"io.github.blossomishymae.event"},{"l":"io.github.blossomishymae.input"}]
