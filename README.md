@@ -26,3 +26,5 @@ Adding mvvmPastel as a dependency with Maven
 ```
 Available versions to select from can be found in the [release tags list](https://github.com/BlossomiShymae/mvvmpastel/tags).
 
+# Documentation
+The Javadocs can be [found here](https://blossomishymae.github.io/mvvmpastel/).
